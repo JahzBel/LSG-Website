@@ -37,18 +37,9 @@ a {
 }
 
 #mainheader {
-    height: 9%;
+    height: 100%;
     padding-top: 0;
 }
-
-.transparent-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0);
-    z-index: 1;
-  }
 
 #mainnavbar {
     overflow: auto;
@@ -60,17 +51,14 @@ a {
 
 #mainnavbar .logo {
     margin: 20px auto;
-    margin-left: 20px;
     float: left;
     font-size: 30px;
     text-transform: uppercase;
 }
 
-#mainnavbar .logo a {
-    color: rgba(255, 255, 255, 0.2);
-    background-image: linear-gradient(to right, rgba(255, 215, 0, 0.9), rgba(255, 215, 0, 0.6), rgba(255, 215, 0, 0.8));
-    -webkit-background-clip: text;
-    background-clip: text;
+
+#mainnavbar .logo a:hover {
+    color: #4ef267;
 }
 
 #mainnavbar .slogan {
@@ -91,15 +79,13 @@ a {
 }
 
 #mainnavbar ul li a {
-    font-weight: bold;
-    color: #ffffff;
     display: block;
     padding: 30px 20px;
     text-align: center;
 }
 
 #mainnavbar ul li a:hover {
-    background: #9678d3;
+    background: orchid;
     color: #ffffff;
 }
 
@@ -147,6 +133,7 @@ hr.mainhr {
     margin: auto;
 }
 
+
 .inicio h2,
 .inicio h3 {
     display: block;
@@ -189,6 +176,14 @@ hr.mainhr {
     transition: transform 0.3s ease-in-out; /* agrega una transición suave para el efecto de escalado */
 }
 
+.blocks {
+    
+    float: left;
+    width: 33%;
+    vertical-align: middle;
+    
+}
+
 
 .display-block2 {
     padding: 10px;
@@ -218,6 +213,8 @@ hr.mainhr {
     padding-bottom: 5px;
 }
 
+
+
 .values-block p {
     font-size: 1.5vmax;
     font-weight: bold;
@@ -234,6 +231,15 @@ hr.mainhr {
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+}
+
+
+.maincontent {
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .redes img {
@@ -290,7 +296,8 @@ hr.mainhr {
 hr.gradient {
     border: 0;
     height: 4px;
-    background-image: linear-gradient(to right, rgba(218, 112, 214, 0), rgba(196, 166, 255, 0.75), rgba(218, 112, 214, 0))
+    background-image: linear-gradient(to right, rgba(218, 112, 214, 0), rgba(196, 166, 255, 0.75), rgba(218, 112, 214, 0));
+    margin: auto;
 }
 
 .redes {
