@@ -146,12 +146,21 @@ hr.mainhr {
 .imgs-block img {
     height: 360px;
     width: 360px;
-    padding: 8px;
 }
+
 
 .imgs-block {
     display: block;
     text-align: center;
+    padding: 2px;
+}
+
+.blocks {
+    
+    float: left;
+    width: 33%;
+    vertical-align: middle;
+    
 }
 
 .display-block2 {
@@ -168,6 +177,7 @@ hr.mainhr {
 }
 
 .conteiner h2 {
+    font-weight: bold;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -176,23 +186,29 @@ hr.mainhr {
 .values-block img {
     height: 200px;
     width: 200px;
-    padding: 20px;
+    height: auto;
+    width: 70%;
+    padding-bottom: 5px;
 }
 
 .values-block p {
-    font-size: 24px;
+    font-size: 2vmax;
+    font-weight: bold;
 }
 
 .values-block {
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
 
 .values-blocks {
     display: block;
     text-align: center;
+    overflow: hidden;
 }
+
 
 .maincontent {
     color: #ffffff;
@@ -291,7 +307,7 @@ form .form-control {
     padding: 6px 12px;
     font-size: 1rem;
     line-height: 1.5;
-    color: orchid;
+    color: black;
     background-color: lightgray;
     border: 1px solid black;
     border-radius: 5px;
@@ -326,6 +342,12 @@ form .form-control {
     color: white;
 }
 
+.btn-gray:hover { 
+    background: lightgray;
+    border: 1px solid lightgray;
+    color: black;
+}
+
 #control .btn {
     width: 100%;
     border-radius: 30px;
@@ -338,4 +360,9 @@ form .form-control {
     font-weight: bold;
     text-align: right;
     color: white;
+}
+
+textarea {
+    overflow: hidden;
+    resize: none;
 }
