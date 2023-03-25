@@ -191,8 +191,14 @@ hr.mainhr {
     padding-bottom: 5px;
 }
 
+@media(max-width:794px) {
+    .values-block p {
+        font-weight: 200;
+    }
+}
+
 .values-block p {
-    font-size: 2vmax;
+    font-size: 1.5vmax;
     font-weight: bold;
 }
 
